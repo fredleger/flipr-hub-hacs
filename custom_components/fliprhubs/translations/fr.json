@@ -1,0 +1,24 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connexion à Flipr",
+        "data": {
+          "username": "Nom d'utilisateur",
+          "password": "Mot de passe",
+          "place_id": "ID de Place"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Identifiants de connexion invalides",
+      "cannot_connect": "Impossible de se connecter à l'API Flipr",
+      "no_place_ids": "Aucun lieu trouvé pour les identifiants fournis. Veuillez vérifier votre compte.",
+      "unknown": "Une erreur inconnue s'est produite"
+    },
+    "success": {
+      "title": "Connexion réussie",
+      "content": "Vos hubs Flipr sont maintenant intégrés."
+    }
+  }
+}

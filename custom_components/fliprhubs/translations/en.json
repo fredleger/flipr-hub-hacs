@@ -1,0 +1,24 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect to Flipr",
+        "data": {
+          "username": "Username",
+          "password": "Password",
+          "place_id": "Place ID"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Invalid authentication credentials",
+      "cannot_connect": "Failed to connect to Flipr API",
+      "no_place_ids": "No places found for the given credentials. Please check your account.",
+      "unknown": "An unknown error occurred"
+    },
+    "success": {
+      "title": "Connection Successful",
+      "content": "Your Flipr Hubs are now integrated."
+    }
+  }
+}

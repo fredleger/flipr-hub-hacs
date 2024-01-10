@@ -1,0 +1,10 @@
+{
+  "version": "0.0.1",
+  "domain": "fliprhubs",
+  "name": "Flipr Hubs Integration",
+  "documentation": "https://github.com/kevin-dumont/flipr-hub-hacs",
+  "dependencies": [],
+  "config_flow": true,
+  "codeowners": ["@kevin-dumont"],
+  "requirements": []
+}
