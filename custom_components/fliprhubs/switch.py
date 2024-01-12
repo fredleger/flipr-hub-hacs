@@ -19,8 +19,22 @@ class FliprHubSwitch(SwitchEntity):
         self._token = token
 
     @property
+    def unique_id(self):
+        return self._serial
+
+    @property
     def name(self):
+        """Return the name of the switch."""
         return self._name
+
+    @property
+    def device_info(self):
+        return {
+            "identifiers": {(DOMAIN, self._serial)},
+            "name": self._name,
+            "manufacturer": "Flipr",
+            "model": "Hub"
+        }
 
     @property
     def is_on(self):
@@ -42,3 +56,8 @@ class FliprHubSwitch(SwitchEntity):
         state_info = await self.api_client.update_hub_state(self._serial, self._token)
         if state_info is not None:
             self._state = state_info['stateEquipment']
+
+    @property
+    def should_poll(self):
+        """Return True if entity has to be polled for state."""
+        return True
