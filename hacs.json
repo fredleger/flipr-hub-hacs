@@ -1,5 +1,7 @@
 {
   "name": "Flipr Hubs",
   "render_readme": true,
-  "icon": "icon.png"
+  "content_in_root": true,
+  "icon": "icon.png",
+  "logo": "icon.png"
 }

@@ -37,6 +37,10 @@ class FliprHubSwitch(SwitchEntity):
         }
 
     @property
+    def icon(self):
+        return "mdi:swimming-pool"
+
+    @property
     def is_on(self):
         return self._state
 
