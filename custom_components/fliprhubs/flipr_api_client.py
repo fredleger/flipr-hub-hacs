@@ -47,11 +47,10 @@ class FliprAPIClient:
 
     async def _make_request(self, method, url, data=None, headers=None):
         async with self.session.request(method, url, data=data, headers=headers) as response:
-            response_json = await response.json()
-
+            
             if response.status == 200:
                 _LOGGER.info(f"Response from {url}: {response_json}")
-                return response_json
+                return True
             else:
                 _LOGGER.error(f"Request to {url} failed with status {response.status}: {response_json}")
-                return None
+                return False
