@@ -1,6 +1,6 @@
-![Icon](icon.png)
-
 # Flipr Hubs Integration for Home Assistant
+
+![Icon](icon.png)
 
 This custom integration allows you to control and monitor Flipr Hubs in Home Assistant. 
 
