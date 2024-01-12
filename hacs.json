@@ -3,5 +3,8 @@
   "render_readme": true,
   "content_in_root": true,
   "icon": "icon.png",
-  "logo": "icon.png"
+  "logo": "icon.png",
+  "documentation": "https://github.com/kevin-dumont/flipr-hub-hacs",
+  "issue_tracker": "https://github.com/kevin-dumont/flipr-hub-hacs/issues",
+  "codeowners": ["@kevin-dumont"]
 }
